@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noor Homes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/824082b16c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Header -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white fixed-top px-4 py-2 shadow-sm"
+      >
+        <div class="container-fluid">
+          <!-- Brand -->
+          <a
+            class="navbar-brand d-flex align-items-center gap-2 fs-3"
+            href="index.html"
+          >
+            <i class="fa-solid fa-people-roof" style="font-size: 1.5rem"></i>
+            Noor Homes
+          </a>
+
+          <!-- Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar2"
+            aria-controls="offcanvasNavbar2"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Offcanvas -->
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar2"
+            aria-labelledby="offcanvasNavbar2Label"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fs-4" id="offcanvasNavbar2Label">
+                Noor Homes
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-5">
+                <li class="nav-item nav-active">
+                  <a
+                    class="nav-link active d-flex align-items-center gap-1"
+                    href="index.html"
+                  >
+                    <i class="bi bi-house" style="font-size: 1.2rem"></i>
+                    Home
+                  </a>
+                </li>
+
+                <li class="nav-item nav-active">
+                  <a
+                    class="nav-link d-flex align-items-center gap-1"
+                    href="about.html"
+                  >
+                    <i class="bi bi-info-circle" style="font-size: 1.2rem"></i>
+                    About
+                  </a>
+                </li>
+
+                <li class="nav-item nav-active">
+                  <a
+                    class="nav-link d-flex align-items-center gap-1"
+                    href="listings.html"
+                  >
+                    <i class="bi bi-list-ul" style="font-size: 1.2rem"></i>
+                    Listings
+                  </a>
+                </li>
+
+                <li class="nav-item nav-active">
+                  <a
+                    class="nav-link d-flex align-items-center gap-1"
+                    href="services.html"
+                  >
+                    <i class="bi bi-briefcase" style="font-size: 1.2rem"></i>
+                    Services
+                  </a>
+                </li>
+
+                <li class="nav-item nav-active">
+                  <a
+                    class="nav-link d-flex align-items-center gap-1"
+                    href="contact.html"
+                  >
+                    <i class="bi bi-envelope" style="font-size: 1.2rem"></i>
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- hero section -->
+      <section class="hero-section">
+        <!-- Carousel Background -->
+        <div
+          id="heroCarousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+          data-bs-interval="4000"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://cloudfront-us-east-1.images.arcpublishing.com/christies/DAQS7C7ASVAXDDXGJTC6SULX2U.png"
+                class="d-block w-100 hero-img"
+                alt="House 1"
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://www.bhg.com/thmb/H9VV9JNnKl-H1faFXnPlQfNprYw=/1799x0/filters:no_upscale():strip_icc()/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg"
+                class="d-block w-100 hero-img"
+                alt="House 2"
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://propertypro.ng/blog/wp-content/uploads/2018/10/Realestate-19.jpg"
+                class="d-block w-100 hero-img"
+                alt="House 3"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Content (Text + Search) -->
+        <div class="hero-content text-center text-white">
+          <h1 class="fw-bold mb-3 fs-1 w-100 heading">Find Your Dream Home</h1>
+          <p class="mb-4 fs-5">
+            Search properties across the city with Noor Homes
+          </p>
+
+          <form
+            class="d-flex justify-content-start align-items-center gap-2 w-100 mx-auto pd-5"
+          >
+            <input
+              class="form-control w-50 me-2"
+              type="search"
+              placeholder="Enter location or city"
+            />
+            <button class="btn btn-primary">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- placards sections -->
+      <section class="placard">
+        <div class="placards-container">
+          <div class="placard-card">
+            <i class="fa-solid fa-shield placard-icon"></i>
+            <h3>Trusted Listings</h3>
+            <p>Over 20 years of trusted real estate expertise.</p>
+          </div>
+
+          <div class="placard-card">
+            <i class="fa-solid fa-arrow-trend-up placard-icon"></i>
+            <h3>Best Price Guarantee</h3>
+            <p>We guarantee the best price for all our properties.</p>
+          </div>
+
+          <div class="placard-card">
+            <i class="fa-solid fa-user-group placard-icon"></i>
+            <h3>Expert Agents</h3>
+            <p>
+              Our agents are experienced and dedicated to helping you find your
+              perfect home.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- featured section -->
+      <section class="py-5 text-center featured-container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h2 class="fw-dark">Featured Properties</h2>
+            <p class="lead text-body-secondary">
+              Explore our handpicked selection of premium properties
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="row g-4 gap-4 d-flex justify-content-center align-items-center"
+        >
+          <div class="card" style="width: 25rem">
+            <img
+              src="https://www.redfin.com/blog/wp-content/uploads/2024/02/9323-Shearwater-Cir-Discovery-Bay-CA-94505-.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold justify-content-left">
+                Modern Family Home
+              </h5>
+              <p class="card-text">
+                <i class="fa-solid fa-location-dot"></i>
+                123 Main Street, Springfield
+              </p>
+            </div>
+
+            <div
+              class="card-body gap-5 d-flex justify-content-start align-items-center"
+            >
+              <a href="#" class="card-link">$500,000</a>
+              <a href="#" class="card-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 25rem">
+            <img
+              src="https://assets.architecturaldesigns.com/cdn-cgi/image/width=3840,quality=75,format=auto,slow-connection-quality=50/plan_assets/325000035/original/290101IY_01_1693600745.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold justify-content-left">
+                Contemporary Condo
+              </h5>
+              <p class="card-text">
+                <i class="fa-solid fa-location-dot"></i>
+                456 Elm Street, Metropolis
+              </p>
+            </div>
+
+            <div
+              class="card-body card-link-gap gap-5 d-flex justify-content-start align-items-center"
+            >
+              <a href="#" class="card-link">$1,000,000</a>
+              <a href="#" class="card-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 25rem">
+            <img
+              src="https://housely.com/wp-content/uploads/2023/03/types-of-houses.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold justify-content-left">
+                Luxury Penthouse
+              </h5>
+              <p class="card-text">
+                <i class="fa-solid fa-location-dot"></i>
+                456 Oak Avenue, Riverside
+              </p>
+            </div>
+
+            <div
+              class="card-body gap-5 d-flex justify-content-start align-items-center"
+            >
+              <a href="#" class="card-link">$1,500,000</a>
+              <a href="#" class="card-link">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="btn btn-primary mt-4 p-3">View All Listings</button>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section class="py-5 text-center bg-primary text-white cta-container">
+        <div class="row py-lg-4">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h2 class="fw-bold text-white">Ready to Find Your Perfect Home?</h2>
+            <p class="lead text-body-secondary fw-medium">
+              Let our expert team guide you through every step of your real
+              estate journey
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary btn-contact my-2"
+                >Contact Us</a
+              >
+              <a href="#" class="btn btn-secondary btn-browse my-2"
+                >Browse Listings</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="fw-bold mb-3">
+              <i class="fa-solid fa-people-roof text-primary me-2"></i>
+              Noor Homes
+            </h4>
+            <p class="text-secondary">
+              Your trusted partner in finding the perfect home.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-semibold mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">Home</a></li>
+              <li><a href="#" class="footer-link">About</a></li>
+              <li><a href="#" class="footer-link">Listings</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-semibold mb-3">Services</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">Property Sales</a></li>
+              <li><a href="#" class="footer-link">Property Rentals</a></li>
+              <li><a href="#" class="footer-link">Property Management</a></li>
+              <li><a href="#" class="footer-link">Consultation</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-semibold mb-3">Contact</h5>
+            <p class="text-secondary mb-1">Email: info@noorhomes.com</p>
+            <p class="text-secondary mb-1">Phone: (555) 123-4567</p>
+            <p class="text-secondary">Address: 123 Main St, City, State</p>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="border-secondary my-4" />
+
+        <div class="text-center text-secondary">
+          © 2026 Noor Homes. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

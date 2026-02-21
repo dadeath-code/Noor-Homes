@@ -5,300 +5,235 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Property Listings</title>
-  <link rel="stylesheet" href="./stylesmain.css">
+  <link rel="stylesheet" href="./styles/main.css">
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
-
 <body>
-
-    <main>
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1 class="fw-bold display-5">Property Listings</h1>
-      <p class="lead">Browse our extensive collection of premium properties</p>
-    </div>
-  </section>
-
-  <!-- Filters Section -->
-  <section class="filters">
-    <div class="container">
-      <div class="row align-items-end g-4">
-
-        <!-- Property Type -->
-        <div class="col-md-3">
-          <label class="form-label">Property Type</label>
-          <select class="form-select">
-            <option selected>All Types</option>
-            <option>For Sale</option>
-            <option>For Rent</option>
-          </select>
-        </div>
-
-        <!-- Price Range -->
-        <div class="col-md-3">
-          <label class="form-label">Price Range</label>
-          <select class="form-select">
-            <option selected>All Prices</option>
-            <option>Under $1M</option>
-            <option>$1M - $3M</option>
-            <option>Over $3M</option>
-          </select>
-        </div>
-
-        <!-- Results Count -->
-        <div class="col-md text-md-end">
-          <p class="text-muted mb-0">
-            Showing 6 of 6 properties
-          </p>
-        </div>
-
+  <main>
+    <!-- Hero Section -->
+    <section class="hero bg-dark text-white py-5">
+      <div class="container">
+        <h1 class="fw-bold display-5">Property Listings</h1>
+        <p class="lead">Browse our extensive collection of premium properties</p>
       </div>
-    </div>
-</main>
+    </section>
 
+    <!-- Filters Section -->
+    <section class="filters py-4">
+      <div class="container">
+        <div class="row align-items-end g-4">
 
-  <div class="container py-5">
-    <div class="row g-4">
-
-      <!-- Card 1 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="card property-card">
-
-          <div class="position-relative">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="card-img-top property-img"
-              alt="Villa">
-
-            <span class="badge text-white custom-badge">Featured</span>
-
-            <div class="favorite-btn">
-              <i class="bi bi-heart"></i>
-            </div>
+          <!-- Property Type -->
+          <div class="col-md-3">
+            <label class="form-label">Property Type</label>
+            <select class="form-select">
+              <option selected>All Types</option>
+              <option>For Sale</option>
+              <option>For Rent</option>
+            </select>
           </div>
 
-          <div class="card-body p-4">
-            <h5 class="card-title fw-semibold">Modern Luxury Villa</h5>
-            <p class="text-muted small mb-3">
-              <i class="bi bi-geo-alt"></i> Beverly Hills, CA
-            </p>
+          <!-- Price Range -->
+          <div class="col-md-3">
+            <label class="form-label">Price Range</label>
+            <select class="form-select">
+              <option selected>All Prices</option>
+              <option>Under $1M</option>
+              <option>$1M - $3M</option>
+              <option>Over $3M</option>
+            </select>
+          </div>
 
-            <div class="d-flex gap-4 text-muted small mb-3">
-              <span><i class="bi bi-bed"></i> 5</span>
-              <span><i class="bi bi-badge-wc"></i> 4</span>
-              <span><i class="bi bi-aspect-ratio"></i> 4,200 sqft</span>
-            </div>
-
-            <hr>
-
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="property-price">$2,450,000</div>
-              <a href="#" class="details-link">Details →</a>
-            </div>
+          <!-- Results Count -->
+          <div class="col-md text-md-end">
+            <p class="text-muted mb-0">Showing 6 of 6 properties</p>
           </div>
 
         </div>
       </div>
+    </section>
 
-      <!-- Card 2 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="card property-card">
+    <!-- Properties Grid -->
+    <section class="properties py-5">
+      <div class="container">
+        <div class="row g-4">
 
-          <div class="position-relative">
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" class="card-img-top property-img"
-              alt="Apartment">
-
-            <span class="badge text-white custom-badge">New</span>
-
-            <div class="favorite-btn">
-              <i class="bi bi-heart"></i>
+          <!-- Card 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card property-card">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="card-img-top property-img"
+                  alt="Villa">
+                <span class="badge text-white custom-badge">Featured</span>
+                <div class="favorite-btn">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <h5 class="card-title fw-semibold">Modern Luxury Villa</h5>
+                <p class="text-muted small mb-3"><i class="bi bi-geo-alt"></i> Beverly Hills, CA</p>
+                <div class="d-flex gap-4 text-muted small mb-3">
+                  <span><i class="bi bi-bed"></i> 5</span>
+                  <span><i class="bi bi-badge-wc"></i> 4</span>
+                  <span><i class="bi bi-aspect-ratio"></i> 4,200 sqft</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="property-price">$2,450,000</div>
+                  <a href="#" class="details-link">Details →</a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="card-body p-4">
-            <h5 class="card-title fw-semibold">Contemporary Apartment</h5>
-            <p class="text-muted small mb-3">
-              <i class="bi bi-geo-alt"></i> Manhattan, NY
-            </p>
-
-            <div class="d-flex gap-4 text-muted small mb-3">
-              <span><i class="bi bi-bed"></i> 3</span>
-              <span><i class="bi bi-badge-wc"></i> 2</span>
-              <span><i class="bi bi-aspect-ratio"></i> 2,100 sqft</span>
-            </div>
-
-            <hr>
-
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="property-price">$1,850,000</div>
-              <a href="#" class="details-link">Details →</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="card property-card">
-
-          <div class="position-relative">
-            <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1" class="card-img-top property-img"
-              alt="Penthouse">
-
-            <span class="badge text-white custom-badge">Featured</span>
-
-            <div class="favorite-btn">
-              <i class="bi bi-heart"></i>
+          <!-- Card 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card property-card">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"
+                  class="card-img-top property-img" alt="Apartment">
+                <span class="badge text-white custom-badge">New</span>
+                <div class="favorite-btn">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <h5 class="card-title fw-semibold">Contemporary Apartment</h5>
+                <p class="text-muted small mb-3"><i class="bi bi-geo-alt"></i> Manhattan, NY</p>
+                <div class="d-flex gap-4 text-muted small mb-3">
+                  <span><i class="bi bi-bed"></i> 3</span>
+                  <span><i class="bi bi-badge-wc"></i> 2</span>
+                  <span><i class="bi bi-aspect-ratio"></i> 2,100 sqft</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="property-price">$1,850,000</div>
+                  <a href="#" class="details-link">Details →</a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="card-body p-4">
-            <h5 class="card-title fw-semibold">Downtown Penthouse</h5>
-            <p class="text-muted small mb-3">
-              <i class="bi bi-geo-alt"></i> Miami, FL
-            </p>
-
-            <div class="d-flex gap-4 text-muted small mb-3">
-              <span><i class="bi bi-bed"></i> 4</span>
-              <span><i class="bi bi-badge-wc"></i> 3</span>
-              <span><i class="bi bi-aspect-ratio"></i> 3,500 sqft</span>
-            </div>
-
-            <hr>
-
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="property-price">$3,200,000</div>
-              <a href="#" class="details-link">Details →</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <div class="container pb-5">
-    <div class="row g-4">
-
-      <!-- Card 4 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="card property-card">
-
-          <div class="position-relative">
-            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde" class="card-img-top property-img"
-              alt="Luxury Estate">
-
-            <div class="favorite-btn">
-              <i class="bi bi-heart"></i>
+          <!-- Card 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card property-card">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1" class="card-img-top property-img"
+                  alt="Penthouse">
+                <span class="badge text-white custom-badge">Featured</span>
+                <div class="favorite-btn">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <h5 class="card-title fw-semibold">Downtown Penthouse</h5>
+                <p class="text-muted small mb-3"><i class="bi bi-geo-alt"></i> Miami, FL</p>
+                <div class="d-flex gap-4 text-muted small mb-3">
+                  <span><i class="bi bi-bed"></i> 4</span>
+                  <span><i class="bi bi-badge-wc"></i> 3</span>
+                  <span><i class="bi bi-aspect-ratio"></i> 3,500 sqft</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="property-price">$3,200,000</div>
+                  <a href="#" class="details-link">Details →</a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="card-body p-4">
-            <h5 class="card-title fw-semibold">Luxury Estate</h5>
-            <p class="text-muted small mb-3">
-              <i class="bi bi-geo-alt"></i> Malibu, CA
-            </p>
-
-            <div class="d-flex gap-4 text-muted small mb-3">
-              <span><i class="bi bi-bed"></i> 6</span>
-              <span><i class="bi bi-badge-wc"></i> 5</span>
-              <span><i class="bi bi-aspect-ratio"></i> 6,200 sqft</span>
-            </div>
-
-            <hr>
-
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="property-price">$5,800,000</div>
-              <a href="#" class="details-link">Details →</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="card property-card">
-
-          <div class="position-relative">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="card-img-top property-img"
-              alt="Suburban Home">
-
-            <span class="badge text-white custom-badge">New</span>
-
-            <div class="favorite-btn">
-              <i class="bi bi-heart"></i>
+          <!-- Card 4 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card property-card">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde" class="card-img-top property-img"
+                  alt="Luxury Estate">
+                <div class="favorite-btn">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <h5 class="card-title fw-semibold">Luxury Estate</h5>
+                <p class="text-muted small mb-3"><i class="bi bi-geo-alt"></i> Malibu, CA</p>
+                <div class="d-flex gap-4 text-muted small mb-3">
+                  <span><i class="bi bi-bed"></i> 6</span>
+                  <span><i class="bi bi-badge-wc"></i> 5</span>
+                  <span><i class="bi bi-aspect-ratio"></i> 6,200 sqft</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="property-price">$5,800,000</div>
+                  <a href="#" class="details-link">Details →</a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="card-body p-4">
-            <h5 class="card-title fw-semibold">Suburban Family Home</h5>
-            <p class="text-muted small mb-3">
-              <i class="bi bi-geo-alt"></i> Austin, TX
-            </p>
-
-            <div class="d-flex gap-4 text-muted small mb-3">
-              <span><i class="bi bi-bed"></i> 4</span>
-              <span><i class="bi bi-badge-wc"></i> 3</span>
-              <span><i class="bi bi-aspect-ratio"></i> 3,200 sqft</span>
+          <!-- Card 5 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card property-card">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="card-img-top property-img"
+                  alt="Suburban Home">
+                <span class="badge text-white custom-badge">New</span>
+                <div class="favorite-btn">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <h5 class="card-title fw-semibold">Suburban Family Home</h5>
+                <p class="text-muted small mb-3"><i class="bi bi-geo-alt"></i> Austin, TX</p>
+                <div class="d-flex gap-4 text-muted small mb-3">
+                  <span><i class="bi bi-bed"></i> 4</span>
+                  <span><i class="bi bi-badge-wc"></i> 3</span>
+                  <span><i class="bi bi-aspect-ratio"></i> 3,200 sqft</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="property-price">$750,000</div>
+                  <a href="#" class="details-link">Details →</a>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <hr>
-
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="property-price">$750,000</div>
-              <a href="#" class="details-link">Details →</a>
+          <!-- Card 6 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card property-card">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" class="card-img-top property-img"
+                  alt="Urban Loft">
+                <div class="favorite-btn">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <h5 class="card-title fw-semibold">Urban Loft</h5>
+                <p class="text-muted small mb-3"><i class="bi bi-geo-alt"></i> Seattle, WA</p>
+                <div class="d-flex gap-4 text-muted small mb-3">
+                  <span><i class="bi bi-bed"></i> 2</span>
+                  <span><i class="bi bi-badge-wc"></i> 2</span>
+                  <span><i class="bi bi-aspect-ratio"></i> 1,800 sqft</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="property-price">$1,200,000</div>
+                  <a href="#" class="details-link">Details →</a>
+                </div>
+              </div>
             </div>
           </div>
 
         </div>
       </div>
-
-      <!-- Card 6 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="card property-card">
-
-          <div class="position-relative">
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" class="card-img-top property-img"
-              alt="Urban Loft">
-
-            <div class="favorite-btn">
-              <i class="bi bi-heart"></i>
-            </div>
-          </div>
-
-          <div class="card-body p-4">
-            <h5 class="card-title fw-semibold">Urban Loft</h5>
-            <p class="text-muted small mb-3">
-              <i class="bi bi-geo-alt"></i> Seattle, WA
-            </p>
-
-            <div class="d-flex gap-4 text-muted small mb-3">
-              <span><i class="bi bi-bed"></i> 2</span>
-              <span><i class="bi bi-badge-wc"></i> 2</span>
-              <span><i class="bi bi-aspect-ratio"></i> 1,800 sqft</span>
-            </div>
-
-            <hr>
-
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="property-price">$1,200,000</div>
-              <a href="#" class="details-link">Details →</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  </section>
+    </section>
+  </main>
 
   <!-- Bootstrap JS (optional) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

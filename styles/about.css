@@ -1,0 +1,355 @@
+.card-img-overlay .custom-left {
+  margin-left: 200px !important; /* override Bootstrap ms-5 */
+  margin-top: 20px;             /* optional */
+  color: white;
+}
+
+
+.stats-section {
+  margin-top: 60px;
+  background-color: #fff; /* optional */
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.stat {
+  flex: 1 1 22%; /* grow, shrink, base width 22% */
+  margin: 10px;
+}
+
+.stat:last-child {
+  border-right: none; /* remove divider on last item */
+}
+
+.stat h1 {
+  font-style: Arial;
+  font-size: 3rem;
+  color: #155dfc; /* blue numbers */
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+
+
+
+/* space top & bottom */
+/* ===========================
+   OUR STORY SECTION
+=========================== */
+
+.our-story {
+  padding: 80px 20px;
+  background-color: #fafafa;
+}
+
+/* container */
+.story-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* both sides */
+.story-text-box,
+.story-image-box {
+  flex: 1;
+}
+
+/* title */
+.story-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* text */
+.story-text {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+/* image */
+.story-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+/* tablet */
+@media (max-width: 992px) {
+  .story-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .story-image {
+    height: 350px;
+  }
+}
+
+/* phone */
+@media (max-width: 600px) {
+  .story-title {
+    font-size: 28px;
+  }
+
+  .story-image {
+    height: 250px;
+  }
+}
+
+
+#value-text {
+  display: grid ;
+  text-align: center;
+}
+
+/* section background and spacing */
+.values-section, .values {
+  padding: 60px 0;
+}
+
+/* container layout */
+.values-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: nowrap; /* keep all cards on one line */
+}
+
+/* each card */
+.value-card {
+  flex: 1;                  /* equal width */
+  aspect-ratio: 1/1;        /* perfect square */
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid #ddd;
+  padding: 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+}
+
+
+
+
+
+.value-card:hover {
+  background-color:#eff6ff;
+}
+
+
+/* icon */
+.value-card .icon {
+  width: 70px;
+  height: 70px;
+  background: #e7eef8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #007bff; /* blue icons */
+}
+
+/* heading */
+.value-card h3 {
+  margin-bottom: 15px;
+}
+
+/* paragraph */
+.value-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+
+.our-team{
+  background-color: #fafafa;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column; /* stack heading + cards */
+  align-items: center;
+  padding: 40px;
+}
+
+/* ===========================
+   HEADING SECTION
+=========================== */
+.team-top {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ===========================
+   CARDS ROW
+=========================== */
+.team-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap; /* makes it responsive on smaller screens */
+  justify-content: center;
+}
+
+/* ===========================
+   SINGLE CARD
+=========================== */
+.cards {
+  width: 260px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* shows it’s interactive */
+}
+
+/* ===========================
+   IMAGE INSIDE CARD
+=========================== */
+.cards img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* optional if we want to zoom image later */
+}
+
+/* ===========================
+   CARD TEXT
+=========================== */
+.cards h3 {
+  margin: 15px 0 5px;
+}
+
+.cards p {
+  color: #1e5eff;
+  margin-bottom: 20px;
+}
+
+/* ===========================
+   HOVER EFFECTS
+=========================== */
+.cards:hover {
+  transform: translateY(-10px); /* lifts the entire card */
+  background-color: #f5f5f5;     /* color change on hover */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2); /* stronger shadow for floating effect */
+}
+
+/* optional: image zoom effect on card hover (extra modern look) */
+.cards:hover img {
+  transform: scale(1.05);
+}
+
+
+
+/* ===============================
+   MOBILE RESPONSIVE (≤ 768px)
+================================ */
+@media (max-width: 600px) {
+
+.ms-5 {
+  font-size: 300%;
+}
+
+
+
+  /* hero section text */
+  .card-img-overlay .custom-left {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  .display-4 {
+    font-size: 28px;
+  }
+
+  /* stats → single column */
+  .stats-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .stat {
+    flex: unset; /* remove flex behavior */
+    margin: 0;
+  }
+
+  /* story spacing */
+  .our-story {
+    padding: 40px 20px;
+  }
+
+  .story-title {
+    font-size: 28px;
+  }
+
+  .story-image {
+    height: auto;
+  }
+
+ /* stack Values cards vertically */
+.values-container {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;        /* small padding from sides */
+    gap: 20px;              /* spacing between cards */
+  }
+
+  .value-card {
+    width: 100%;           /* fill container */
+    max-width: none;       /* remove old max-width */
+    margin: 0;             /* remove extra margins */
+  }
+
+  #value-text {
+    margin-top: 40px;
+  }
+
+  /* === TEAM SECTION === */
+  .team-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+    gap: 20px;             /* spacing between cards */
+  }
+
+   .cards {
+    width: 100%;
+    max-width: none;
+    margin: 0;             /* remove old margins */
+  }
+}

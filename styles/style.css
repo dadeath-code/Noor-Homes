@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .navbar-nav .nav-item .nav-link {
   color: #333 !important;
   font-weight: 500;
@@ -175,5 +183,12 @@
   .placard {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .placard .card {
+    width: 100%;
+    max-width: 100%;
   }
 }

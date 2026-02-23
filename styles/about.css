@@ -1,3 +1,25 @@
+.navbar-nav .nav-item .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+  color: black !important;
+  border-radius: 5px;
+  background-color: #f8f9f8;
+}
+
+.active {
+  color: black !important;
+  border-radius: 5px;
+  background-color: #dbecff;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
 .card-img-overlay .custom-left {
   margin-left: 200px !important; /* override Bootstrap ms-5 */
   margin-top: 20px;             /* optional */
@@ -265,6 +287,18 @@
 /* optional: image zoom effect on card hover (extra modern look) */
 .cards:hover img {
   transform: scale(1.05);
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #adb5bd;
+  display: block;
+  margin-bottom: 6px;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #0d6efd;
 }
 
 

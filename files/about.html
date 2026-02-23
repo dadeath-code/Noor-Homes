@@ -1,232 +1,375 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/about.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noor Homes</title>
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/about.css" />
+    
+    <script
+      src="https://kit.fontawesome.com/824082b16c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
+    <!-- header part -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white fixed-top px-4 py-2 shadow-sm"
+      >
+        <div class="container-fluid">
+          <!-- Brand -->
+          <a
+            class="navbar-brand d-flex align-items-center gap-2 fs-3"
+            href="index.html"
+          >
+            <i class="fa-solid fa-people-roof" style="font-size: 1.5rem"></i>
+            Noor Homes
+          </a>
+
+          <!-- Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar2"
+            aria-controls="offcanvasNavbar2"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Offcanvas -->
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar2"
+            aria-labelledby="offcanvasNavbar2Label"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fs-4" id="offcanvasNavbar2Label">
+                Noor Homes
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-5">
+                <li class="nav-item nav-active">
+                  <a
+                    class="nav-link d-flex align-items-center gap-1"
+                    href="index.html"
+                  >
+                    <i class="bi bi-house" style="font-size: 1.2rem"></i>
+                    Home
+                  </a>
+                </li>
+
+                <li class="nav-item nav-active">
+                  <a
+                    class="nav-link active d-flex align-items-center gap-1"
+                    href="about.html"
+                  >
+                    <i class="bi bi-info-circle" style="font-size: 1.2rem"></i>
+                    About
+                  </a>
+                </li>
+
+                <li class="nav-item nav-active">
+                  <a
+                    class="nav-link d-flex align-items-center gap-1"
+                    href="listings.html"
+                  >
+                    <i class="bi bi-list-ul" style="font-size: 1.2rem"></i>
+                    Listings
+                  </a>
+                </li>
+
+                <li class="nav-item nav-active">
+                  <a
+                    class="nav-link d-flex align-items-center gap-1"
+                    href="services.html"
+                  >
+                    <i class="bi bi-briefcase" style="font-size: 1.2rem"></i>
+                    Services
+                  </a>
+                </li>
+
+                <li class="nav-item nav-active">
+                  <a
+                    class="nav-link d-flex align-items-center gap-1"
+                    href="contact.html"
+                  >
+                    <i class="bi bi-envelope" style="font-size: 1.2rem"></i>
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <main>
-
-        <div class="container-fluid p-0 mt-5">
-            <div class="card text-white border-0"> <img
-                    src="https://images.unsplash.com/photo-1635108196979-e53cc3084eff" class="card-img"
-                    style="height:450px; object-fit:cover;" alt="">
-                <div class="card-img-overlay d-flex align-items-center" style="background: rgba(0,0,0,0.55);">
-                    <div class="ms-5 ps-3">
-                        <h1 class="display-4 fw-bolder">About Noor Homes</h1>
-                        <p class="fs-5 fw-semibold"> Building dreams, creating communities, and transforming lives
-                            through<br> exceptional real estate services. </p>
-                    </div>
-                </div>
+      <div class="container-fluid p-0 mt-5">
+        <div class="card text-white border-0">
+          <img
+            src="https://images.unsplash.com/photo-1635108196979-e53cc3084eff"
+            class="card-img"
+            style="height: 450px; object-fit: cover"
+            alt=""
+          />
+          <div
+            class="card-img-overlay d-flex align-items-center"
+            style="background: rgba(0, 0, 0, 0.55)"
+          >
+            <div class="ms-5 ps-3">
+              <h1 class="display-4 fw-bolder">About Noor Homes</h1>
+              <p class="fs-5 fw-semibold">
+                Building dreams, creating communities, and transforming lives
+                through<br />
+                exceptional real estate services.
+              </p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-section">
+        <div class="stats-container">
+          <div class="text-center stat">
+            <h1>20+</h1>
+            <p>Years Experience</p>
+          </div>
+
+          <div class="text-center stat">
+            <h1>5000+</h1>
+            <p>Properties Sold</p>
+          </div>
+
+          <div class="text-center stat">
+            <h1>98%</h1>
+            <p>Client Satisfaction</p>
+          </div>
+
+          <div class="text-center stat">
+            <h1>50+</h1>
+            <p>Expert Agents</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="our-story">
+        <div class="story-container">
+          <!-- Text Side -->
+          <div class="story-text-box">
+            <h2 class="story-title">Our Story</h2>
+
+            <p class="story-text">
+              Founded in 2004, Noor Homes began with a simple vision: to
+              revolutionize the real estate experience by putting clients first.
+              Over the past two decades, we've grown from a small local agency
+              to one of the most trusted names in real estate.
+            </p>
+
+            <p class="story-text">
+              Our success is built on a foundation of integrity, expertise, and
+              genuine care for our clients' needs. We believe that buying or
+              selling a home is more than a transaction—it's a life-changing
+              journey that deserves personalized attention and professional
+              guidance.
+            </p>
+
+            <p class="story-text">
+              Today, Noor Homes is proud to serve thousands of satisfied
+              clients, offering comprehensive real estate services that span
+              residential sales, rentals, property management, and investment
+              consultation.
+            </p>
+          </div>
+
+          <!-- Image Side -->
+          <div class="story-image-box">
+            <img
+              src="https://images.unsplash.com/photo-1706808849802-8f876ade0d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsdXh1cnklMjBob3VzZSUyMGV4dGVyaW9yfGVufDF8fHx8MTc3MTM3MDQ3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              alt="Modern Home"
+              class="story-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="our-value part">
+        <div id="value-text">
+          <h1>Our Values</h1>
+          <p>The principles that guide everything we do</p>
         </div>
 
-
-        <div class="stats-section">
-            <div class="stats-container">
-
-                <div class="text-center stat">
-                    <h1>20+</h1>
-                    <p>Years Experience</p>
-                </div>
-
-                <div class="text-center stat">
-                    <h1>5000+</h1>
-                    <p>Properties Sold</p>
-                </div>
-
-                <div class="text-center stat">
-                    <h1>98%</h1>
-                    <p>Client Satisfaction</p>
-                </div>
-
-                <div class="text-center stat">
-                    <h1>50+</h1>
-                    <p>Expert Agents</p>
-                </div>
-
+        <section class="values">
+          <div class="values-container">
+            <!-- Card 1: Bullseye -->
+            <div class="value-card">
+              <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
+              <h3>Our Mission</h3>
+              <p>
+                To help every client find their perfect home while providing
+                exceptional service and expertise throughout their real estate
+                journey.
+              </p>
             </div>
+
+            <!-- Card 2: Medal -->
+            <div class="value-card">
+              <div class="icon"><i class="fa-solid fa-medal"></i></div>
+              <h3>Excellence</h3>
+              <p>
+                We maintain the highest standards of professionalism and
+                integrity in every transaction we handle.
+              </p>
+            </div>
+
+            <!-- Card 3: Heart -->
+            <div class="value-card">
+              <div class="icon"><i class="fa-solid fa-heart"></i></div>
+              <h3>Client-Focused</h3>
+              <p>
+                Your satisfaction is our priority. We listen, understand, and
+                deliver results that exceed expectations.
+              </p>
+            </div>
+
+            <!-- Card 4: Users -->
+            <div class="value-card">
+              <div class="icon"><i class="fa-solid fa-users"></i></div>
+              <h3>Community</h3>
+              <p>
+                We're committed to building lasting relationships and
+                contributing positively to the communities we serve.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Include Font Awesome -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+      </section>
+
+      <section class="our-team">
+        <div class="team-container">
+          <!-- top section -->
+          <div class="team-top">
+            <h1>Meet Our Team</h1>
+            <p>Experienced professionals dedicated to your success</p>
+          </div>
+
+          <!-- cards section -->
+          <div class="team-cards">
+            <div class="cards">
+              <img
+                src="https://images.unsplash.com/photo-1770199105714-a5a349546346?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2VkZW50YXJ5JTIwbGlmZXN0eWxlfGVufDB8fDB8fHww"
+              />
+              <h3>Sarah Johnson</h3>
+              <p>CEO & Founder</p>
+            </div>
+
+            <div class="cards">
+              <img
+                src="https://images.unsplash.com/photo-1770199105714-a5a349546346?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2VkZW50YXJ5JTIwbGlmZXN0eWxlfGVufDB8fDB8fHww"
+              />
+              <h3>Michael Chen</h3>
+              <p>Senior Agent</p>
+            </div>
+
+            <div class="cards">
+              <img
+                src="https://images.unsplash.com/photo-1770199105714-a5a349546346?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2VkZW50YXJ5JTIwbGlmZXN0eWxlfGVufDB8fDB8fHww"
+              />
+              <h3>Emily Rodriguez</h3>
+              <p>Property Manager</p>
+            </div>
+
+            <div class="cards">
+              <img
+                src="https://images.unsplash.com/photo-1770199105714-a5a349546346?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2VkZW50YXJ5JTIwbGlmZXN0eWxlfGVufDB8fDB8fHww"
+              />
+              <h3>David Park</h3>
+              <p>Marketing Director</p>
+            </div>
+          </div>
         </div>
-
-
-
-        <section class="our-story">
-
-            <div class="story-container">
-
-                <!-- Text Side -->
-                <div class="story-text-box">
-                    <h2 class="story-title">Our Story</h2>
-
-                    <p class="story-text">
-                        Founded in 2004, Noor Homes began with a simple vision: to revolutionize the real estate
-                        experience by putting clients first. Over the past two decades, we've grown from a small local
-                        agency to one of the most trusted names in real estate.
-                    </p>
-
-                    <p class="story-text">
-                        Our success is built on a foundation of integrity, expertise, and genuine care for our clients'
-                        needs. We believe that buying or selling a home is more than a transaction—it's a life-changing
-                        journey that deserves personalized attention and professional guidance.
-                    </p>
-
-                    <p class="story-text">
-                        Today, Noor Homes is proud to serve thousands of satisfied clients, offering comprehensive real
-                        estate services that span residential sales, rentals, property management, and investment
-                        consultation.
-                    </p>
-                </div>
-
-                <!-- Image Side -->
-                <div class="story-image-box">
-                    <img src="https://images.unsplash.com/photo-1706808849802-8f876ade0d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsdXh1cnklMjBob3VzZSUyMGV4dGVyaW9yfGVufDF8fHx8MTc3MTM3MDQ3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                        alt="Modern Home" class="story-image">
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section class="our-value part">
-            <div id="value-text">
-                <h1>Our Values</h1>
-                <p>The principles that guide everything we do</p>
-            </div>
-
-
-
-
-            <section class="values">
-
-                <div class="values-container">
-
-                    <!-- Card 1: Bullseye -->
-                    <div class="value-card">
-                        <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
-                        <h3>Our Mission</h3>
-                        <p>
-                            To help every client find their perfect home while providing exceptional
-                            service and expertise throughout their real estate journey.
-                        </p>
-                    </div>
-
-                    <!-- Card 2: Medal -->
-                    <div class="value-card">
-                        <div class="icon"><i class="fa-solid fa-medal"></i></div>
-                        <h3>Excellence</h3>
-                        <p>
-                            We maintain the highest standards of professionalism and integrity in
-                            every transaction we handle.
-                        </p>
-                    </div>
-
-                    <!-- Card 3: Heart -->
-                    <div class="value-card">
-                        <div class="icon"><i class="fa-solid fa-heart"></i></div>
-                        <h3>Client-Focused</h3>
-                        <p>
-                            Your satisfaction is our priority. We listen, understand, and deliver
-                            results that exceed expectations.
-                        </p>
-                    </div>
-
-                    <!-- Card 4: Users -->
-                    <div class="value-card">
-                        <div class="icon"><i class="fa-solid fa-users"></i></div>
-                        <h3>Community</h3>
-                        <p>
-                            We're committed to building lasting relationships and contributing
-                            positively to the communities we serve.
-                        </p>
-                    </div>
-
-                </div>
-
-            </section>
-
-
-
-            <!-- Include Font Awesome -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
-
-
-
-
-
-
-        </section>
-
-
-
-
-
-        <section class="our-team">
-
-            <div class="team-container">
-
-                <!-- top section -->
-                <div class="team-top">
-                    <h1>Meet Our Team</h1>
-                    <p>Experienced professionals dedicated to your success</p>
-                </div>
-
-                <!-- cards section -->
-                <div class="team-cards">
-
-                    <div class="cards">
-                        <img
-                            src="https://images.unsplash.com/photo-1770199105714-a5a349546346?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2VkZW50YXJ5JTIwbGlmZXN0eWxlfGVufDB8fDB8fHww">
-                        <h3>Sarah Johnson</h3>
-                        <p>CEO & Founder</p>
-                    </div>
-
-                    <div class="cards">
-                        <img
-                            src="https://images.unsplash.com/photo-1770199105714-a5a349546346?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2VkZW50YXJ5JTIwbGlmZXN0eWxlfGVufDB8fDB8fHww">
-                        <h3>Michael Chen</h3>
-                        <p>Senior Agent</p>
-                    </div>
-
-                    <div class="cards">
-                        <img
-                            src="https://images.unsplash.com/photo-1770199105714-a5a349546346?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2VkZW50YXJ5JTIwbGlmZXN0eWxlfGVufDB8fDB8fHww">
-                        <h3>Emily Rodriguez</h3>
-                        <p>Property Manager</p>
-                    </div>
-
-                    <div class="cards">
-                        <img
-                            src="https://images.unsplash.com/photo-1770199105714-a5a349546346?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2VkZW50YXJ5JTIwbGlmZXN0eWxlfGVufDB8fDB8fHww">
-                        <h3>David Park</h3>
-                        <p>Marketing Director</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
+      </section>
     </main>
 
+    <!-- footer -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="fw-bold mb-3">
+              <i class="fa-solid fa-people-roof text-primary me-2"></i>
+              Noor Homes
+            </h4>
+            <p class="text-secondary">
+              Your trusted partner in finding the perfect home.
+            </p>
+          </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-semibold mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">Home</a></li>
+              <li><a href="#" class="footer-link">About</a></li>
+              <li><a href="#" class="footer-link">Listings</a></li>
+            </ul>
+          </div>
 
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-semibold mb-3">Services</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">Property Sales</a></li>
+              <li><a href="#" class="footer-link">Property Rentals</a></li>
+              <li><a href="#" class="footer-link">Property Management</a></li>
+              <li><a href="#" class="footer-link">Consultation</a></li>
+            </ul>
+          </div>
 
-</body>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-semibold mb-3">Contact</h5>
+            <p class="text-secondary mb-1">Email: info@noorhomes.com</p>
+            <p class="text-secondary mb-1">Phone: (555) 123-4567</p>
+            <p class="text-secondary">Address: 123 Main St, City, State</p>
+          </div>
+        </div>
 
+        <!-- Divider -->
+        <hr class="border-secondary my-4" />
+
+        <div class="text-center text-secondary">
+          © 2026 Noor Homes. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
